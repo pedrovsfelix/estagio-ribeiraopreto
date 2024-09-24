@@ -10,11 +10,29 @@
 // IMPORTANTE: Esse número pode ser informado através de qualquer entrada de sua preferência ou pode ser 
 // previamente definido no código;
 
+// Resposta: Ainda não sei como resolver.
+
 // 2) Escreva um programa que verifique, em uma string, a existência da letra ‘a’, seja maiúscula ou minúscula, 
 // além de informar a quantidade de vezes em que ela ocorre.
 
 // IMPORTANTE: Essa string pode ser informada através de qualquer entrada de sua preferência ou pode ser 
 // previamente definida no código;
+
+// RESPOSTA:
+const palavra = prompt("Informe a palavra: ").toLowerCase();
+let contador = 0;
+
+for(let i = 0; i < palavra.length; i++) {
+    if(palavra[i] === 'a') {
+        contador++;
+    }
+}
+
+if(contador > 0) {
+    alert(`A letra 'a' aparece ${contador} vezes.`);
+} else {
+    alert(`A letra 'a' não foi encontrada.`)
+}
 
 // 3) Observe o trecho de código abaixo: 
 // int INDICE = 12, SOMA = 0, K = 1; enquanto K < INDICE faça { K = K + 1; SOMA = SOMA + K; } imprimir(SOMA);
